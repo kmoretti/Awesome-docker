@@ -34,6 +34,14 @@
 | 文件 & 存储 | 1 |
 | 消息 & 自动化 | 2 |
 
+## 📘 Wiki 文档
+
+- [Wiki 首页](./wiki/README.md)
+- [新手开始前先看这篇](./wiki/getting-started.md)
+- [Docker 常用命令手册](./wiki/docker-commands.md)
+- [仓库完整目录树](./wiki/tree.md)
+- [问题记录](./note.md)
+
 ## 📚 项目分类
 
 ### 🛠️ 开发 & 运维 (3个)
