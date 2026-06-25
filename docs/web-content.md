@@ -117,3 +117,27 @@
 - **访问端口**: `80`
 - **绑定域名**: `music-api.your-domain.com`
 - **数据目录**: 无必须持久化目录，建议用环境变量管理配置
+
+### 6. moments
+
+- **项目地址**: https://github.com/kingwrcy/moments
+- **定位**: 朋友圈/动态内容展示站
+- **适用场景**: 记录日常动态、个人时间流、内容分享页
+- **Docker Compose**:
+  ```yaml
+  services:
+    moments:
+      image: kingwrcy/moments:latest
+      container_name: moments
+      restart: always
+      environment:
+        PORT: 3000
+        JWT_KEY: change-me
+      ports:
+        - "3000:3000"
+      volumes:
+        - ./data/moments:/app/data
+  ```
+- **访问端口**: `3000`
+- **绑定域名**: `moments.your-domain.com`
+- **数据目录**: `./data/moments -> /app/data`
