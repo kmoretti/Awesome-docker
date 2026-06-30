@@ -141,3 +141,24 @@
 - **访问端口**: `3000`
 - **绑定域名**: `moments.your-domain.com`
 - **数据目录**: `./data/moments -> /app/data`
+
+### 7. dox
+
+- **项目地址**: https://github.com/lin-snow/dox
+- **定位**: 自托管待办事项 / 个人任务管理服务
+- **适用场景**: 个人待办管理、终端 Todo、轻量多用户任务协作
+- **Docker Compose**:
+  ```yaml
+  services:
+    dox:
+      image: sn0wl1n/dox:latest
+      container_name: dox
+      restart: unless-stopped
+      ports:
+        - "6278:6278"
+      volumes:
+        - ./data/dox:/app/data
+  ```
+- **访问端口**: `6278`
+- **绑定域名**: `dox.your-domain.com`
+- **数据目录**: `./data/dox -> /app/data`

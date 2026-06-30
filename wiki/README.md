@@ -20,6 +20,7 @@
 - [busuanzi 部署与更新教程](./web-content/busuanzi.md)
 - [Meting API 部署与更新教程](./web-content/meting-api.md)
 - [moments 部署与更新教程](./web-content/moments.md)
+- [dox 部署与更新教程](./web-content/dox.md)
 
 ### 搜索与导航
 
